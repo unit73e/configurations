@@ -1,6 +1,6 @@
 # Neo Vim Configuration files
 
-This is a set of configurations files for NeoVim that I use.
+A set of configurations files for NeoVim.
 
 ## Requirements
 
