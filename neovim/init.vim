@@ -5,6 +5,7 @@ call plug#begin()
     Plug 'eagletmt/neco-ghc', { 'for': 'haskell' }
     Plug 'octol/vim-hindent', { 'for': 'haskell' }
     Plug 'zchee/deoplete-jedi', { 'for': 'python' }
+    Plug 'vim-javacomplete2', { 'for': 'java' }
 call plug#end()
 
 " Maps \n to NERDTreeToggle
