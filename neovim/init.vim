@@ -4,6 +4,7 @@ call plug#begin()
     Plug 'neomake/neomake'
     Plug 'eagletmt/neco-ghc', { 'for': 'haskell' }
     Plug 'octol/vim-hindent', { 'for': 'haskell' }
+    Plug 'zchee/deoplete-jedi', { 'for': 'python' }
 call plug#end()
 
 " Maps \n to NERDTreeToggle
