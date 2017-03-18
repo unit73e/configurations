@@ -1,8 +1,10 @@
 call plug#begin()
     Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+    Plug 'Shougo/vimproc.vim', {'do' : 'make'}
     Plug 'neomake/neomake'
     Plug 'eagletmt/neco-ghc', { 'for': 'haskell' }
+    Plug 'eagletmt/ghcmod-vim', { 'for': 'haskell' }
     Plug 'octol/vim-hindent', { 'for': 'haskell' }
     Plug 'zchee/deoplete-jedi', { 'for': 'python' }
     Plug 'vim-javacomplete2', { 'for': 'java' }
