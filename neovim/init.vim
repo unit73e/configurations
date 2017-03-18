@@ -18,3 +18,6 @@ let g:deoplete#enable_at_startup = 1
 
 " Run Neomake on write
 autocmd! BufWritePost * Neomake
+
+" Map <C-L> (redraw screen) to also turn off search highlighting
+nnoremap <C-L> :nohl<CR><C-L>
