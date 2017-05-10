@@ -10,6 +10,7 @@ call plug#begin()
     Plug 'octol/vim-hindent', { 'for': 'haskell' }
     Plug 'zchee/deoplete-jedi', { 'for': 'python' }
     Plug 'vim-javacomplete2', { 'for': 'java' }
+    Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
 call plug#end()
 
 " Maps \n to NERDTreeToggle
