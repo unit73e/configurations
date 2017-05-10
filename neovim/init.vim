@@ -4,6 +4,7 @@ call plug#begin()
     Plug 'Shougo/vimproc.vim', {'do' : 'make'}
     Plug 'neomake/neomake'
     Plug 'ervandew/supertab'
+    Plug 'godlygeek/tabular'
     Plug 'eagletmt/neco-ghc', { 'for': 'haskell' }
     Plug 'eagletmt/ghcmod-vim', { 'for': 'haskell' }
     Plug 'octol/vim-hindent', { 'for': 'haskell' }
