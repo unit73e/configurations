@@ -11,6 +11,7 @@ call plug#begin()
     Plug 'zchee/deoplete-jedi', { 'for': 'python' }
     Plug 'vim-scripts/vim-javacomplete2', { 'for': 'java' }
     Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
+    Plug 'cloudhead/neovim-fuzzy'
 call plug#end()
 
 " Maps \n to NERDTreeToggle
@@ -27,3 +28,6 @@ let g:SuperTabDefaultCompletionType = "context"
 
 " Map <C-L> (redraw screen) to also turn off search highlighting
 nnoremap <C-L> :nohl<CR><C-L>
+
+" Map <C-p> to fuzzy finder
+nnoremap <C-p> :FuzzyOpen<CR>
