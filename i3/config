@@ -184,3 +184,6 @@ bindsym $mod+period exec --no-startup-id ponymix toggle
 # Next/Previous workspace
 bindsym $mod+Next workspace next
 bindsym $mod+Prior workspace prev
+
+# Close window with middle button
+bindsym button2 kill
