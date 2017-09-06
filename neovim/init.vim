@@ -12,7 +12,13 @@ call plug#begin()
     Plug 'vim-scripts/vim-javacomplete2', { 'for': 'java' }
     Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
     Plug 'cloudhead/neovim-fuzzy'
+    Plug 'morhetz/gruvbox'
 call plug#end()
+
+" Change colorscheme
+set termguicolors
+set background=dark
+colorscheme gruvbox
 
 " Maps \n to NERDTreeToggle
 map <Leader>n :NERDTreeToggle<CR>
