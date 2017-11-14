@@ -5,10 +5,9 @@ call plug#begin()
     Plug 'neomake/neomake'
     Plug 'ervandew/supertab'
     Plug 'godlygeek/tabular'
-    Plug 'bitc/vim-hdevtools'
-    "Plug 'eagletmt/neco-ghc', { 'for': 'haskell' }
-    "Plug 'eagletmt/ghcmod-vim', { 'for': 'haskell' }
+    Plug 'bitc/vim-hdevtools', { 'for': 'haskell' }
     Plug 'octol/vim-hindent', { 'for': 'haskell' }
+    Plug 'Twinside/vim-hoogle', { 'for': 'haskell' }
     Plug 'zchee/deoplete-jedi', { 'for': 'python' }
     Plug 'vim-scripts/vim-javacomplete2', { 'for': 'java' }
     Plug 'derekwyatt/vim-scala', { 'for': 'scala' }

@@ -1,17 +1,18 @@
-" Disable haskell-vim omnifunc
-"let g:haskellmode_completion_ghc = 0
-
-" Enable neco-ghc omnifunc
-"autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
-
-" GhcMod mappings
-"map <silent> tw :GhcModTypeInsert<CR>
-"map <silent> ts :GhcModSplitFunCase<CR>
-"map <silent> tq :GhcModType<CR>
-"map <silent> te :GhcModTypeClear<CR>
-
+" Make hdevtools compile dynamically due to Arch Linux default compilation
 let g:neomake_haskell_hdevtools_args = neomake#makers#ft#haskell#hdevtools()['args'] + ["-g-dynamic"]
 let g:hdevtools_options = '-g-dynamic -g-Wall'
 
+" Show function type
 map <silent> tq :HdevtoolsType<CR>
 map <silent> te :HdevtoolsClear<CR>
+
+" Hoogle the word under the cursor
+nnoremap <silent> <leader>hh :Hoogle<CR>
+" Hoogle and prompt for input
+nnoremap <leader>hH :Hoogle 
+" Hoogle for detailed documentation (e.g. "Functor")
+nnoremap <silent> <leader>hi :HoogleInfo<CR>
+" Hoogle for detailed documentation and prompt for input
+nnoremap <leader>hI :HoogleInfo 
+" Hoogle, close the Hoogle window
+nnoremap <silent> <leader>hz :HoogleClose<CR>
